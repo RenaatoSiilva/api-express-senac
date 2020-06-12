@@ -2,7 +2,6 @@ const { expect } = require("chai");
 const request = require("supertest");
 const server = require("../../../server");
 const UserModel = require("../../../models/user");
-const Database = require("../../utils/database");
 
 describe("Delete User Route", () => {
   context("when I execute a delete to /user/:id with valid id", () => {
